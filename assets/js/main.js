@@ -107,12 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = String(formData.get('message') || '').trim();
 
       if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message) {
-        alert('Please fill in all fields with a valid email.');
+        alert('Per favore compila tutti i campi e inserisci un email valida.');
         return;
       }
 
-      const subject = encodeURIComponent(`Quote request from ${name}`);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      const subject = encodeURIComponent(`Richiesta preventivo da ${name}`);
+      const body = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\n${message}`);
       window.location.href = `mailto:hello@nettunodesigns.dev?subject=${subject}&body=${body}`;
     });
   }

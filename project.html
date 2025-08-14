@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project – Nettuno Designs</title>
-  <meta name="description" content="Project case study by Nettuno Designs.">
+  <title>Progetto – Nettuno Designs</title>
+  <meta name="description" content="Case study di un progetto realizzato da Nettuno Designs.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +23,10 @@
         <button class="hamburger" aria-label="Open navigation" aria-expanded="false"><span></span></button>
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
+          <a href="about.html">Chi Siamo</a>
+          <a href="services.html">Servizi</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html" class="btn btn-outline">Request a Quote</a>
+          <a href="contact.html" class="btn btn-outline">Richiedi un Preventivo</a>
         </div>
       </nav>
     </div>
@@ -35,9 +35,9 @@
   <main>
     <section class="subhero">
       <div class="container">
-        <div class="breadcrumbs">Portfolio / Project</div>
-        <h1 id="projectTitle">Project</h1>
-        <p class="help" id="projectSubtitle">Case study details, stack, and results.</p>
+        <div class="breadcrumbs">Portfolio / Progetto</div>
+        <h1 id="projectTitle">Progetto</h1>
+        <p class="help" id="projectSubtitle">Dettagli del case study, stack e risultati.</p>
       </div>
     </section>
 
@@ -45,18 +45,18 @@
       <div class="container">
         <div class="gallery-grid" id="gallery"></div>
         <div class="section-title">
-          <h2>Overview</h2>
+          <h2>Panoramica</h2>
           <p id="projectDescription">—</p>
         </div>
         <div class="card-grid">
           <div class="card">
             <div class="icon">🧰</div>
-            <h3>Tech Stack</h3>
+            <h3>Stack Tecnologico</h3>
             <p id="projectStack">—</p>
           </div>
           <div class="card">
             <div class="icon">💬</div>
-            <h3>Client Testimonial</h3>
+            <h3>Testimonianza</h3>
             <p id="projectQuote">—</p>
           </div>
         </div>
@@ -67,10 +67,10 @@
       <div class="container">
         <div class="cta-banner">
           <div>
-            <h3>Inspired by this project?</h3>
-            <p class="help">We’d love to craft your success story next.</p>
+            <h3>Ispirato da questo progetto?</h3>
+            <p class="help">Saremmo felici di realizzare anche il tuo successo.</p>
           </div>
-          <a href="contact.html" class="btn btn-gradient">Request a Quote</a>
+          <a href="contact.html" class="btn btn-gradient">Richiedi un Preventivo</a>
         </div>
       </div>
     </section>
@@ -80,19 +80,19 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="logoNettuno.png" alt="Nettuno Designs">
-        <p>We design and build websites that perform.</p>
+        <p>Progettiamo e realizziamo siti web performanti.</p>
       </div>
       <div>
-        <strong>Company</strong>
+        <strong>Azienda</strong>
         <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
+          <a href="about.html">Chi Siamo</a>
+          <a href="services.html">Servizi</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html">Contatti</a>
         </div>
       </div>
       <div>
-        <strong>Contact</strong>
+        <strong>Contatti</strong>
         <div class="footer-links">
           <a href="mailto:hello@nettunodesigns.dev">hello@nettunodesigns.dev</a>
           <a href="tel:+391234567890">+39 123 456 7890</a>
@@ -100,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="container" style="margin-top:16px; color:#94a3b8; font-size:14px;">© <span id="y"></span> Nettuno Designs. All rights reserved.</div>
+    <div class="container" style="margin-top:16px; color:#94a3b8; font-size:14px;">© <span id="y"></span> Nettuno Designs. Tutti i diritti riservati.</div>
   </footer>
 
   <script>
@@ -108,12 +108,12 @@
     const params = new URLSearchParams(location.search);
     const id = params.get('id') || '1';
     const presets = {
-      '1': { title: 'BlueWave Commerce', subtitle: 'E‑commerce redesign and optimization', desc: 'We redesigned the storefront and checkout, improving UX and speed.', stack: 'HTML, CSS, JS', quote: 'Our conversion rate jumped and the site feels premium.', seed: 'p1' },
-      '2': { title: 'Neptune Analytics', subtitle: 'Marketing site for SaaS launch', desc: 'Fast landing experience with clear messaging and SEO setup.', stack: 'HTML, CSS, JS', quote: 'Great partner from concept to launch.', seed: 'p2' },
-      '3': { title: 'Coral Studio', subtitle: 'Portfolio for creative agency', desc: 'Showcasing work with a modern aesthetic and performance.', stack: 'HTML, CSS, JS', quote: 'Looks and performs beautifully.', seed: 'p3' },
-      '4': { title: 'Triton Logistics', subtitle: 'B2B services site', desc: 'Clear IA and compelling CTAs for lead generation.', stack: 'HTML, CSS, JS', quote: 'Increased inbound leads significantly.', seed: 'p4' },
-      '5': { title: 'Marina Health', subtitle: 'Clinic website', desc: 'Accessibility and trust‑focused design with structured content.', stack: 'HTML, CSS, JS', quote: 'Patients love the new site.', seed: 'p5' },
-      '6': { title: 'Poseidon Ventures', subtitle: 'VC firm presence', desc: 'Minimal, authoritative design with strong typography.', stack: 'HTML, CSS, JS', quote: 'Exactly the tone we wanted.', seed: 'p6' }
+      '1': { title: 'BlueWave Commerce', subtitle: 'Redesign e ottimizzazione e‑commerce', desc: 'Ridisegno storefront e checkout con UX e velocità migliorate.', stack: 'HTML, CSS, JS', quote: 'Il tasso di conversione è salito e il sito ha un feeling premium.', seed: 'p1' },
+      '2': { title: 'Neptune Analytics', subtitle: 'Sito marketing per lancio SaaS', desc: 'Landing veloce con messaggi chiari e setup SEO.', stack: 'HTML, CSS, JS', quote: 'Partner eccellente dall’idea al lancio.', seed: 'p2' },
+      '3': { title: 'Coral Studio', subtitle: 'Portfolio per agenzia creativa', desc: 'Valorizzazione lavori con estetica moderna e performance.', stack: 'HTML, CSS, JS', quote: 'Bellissimo e performante.', seed: 'p3' },
+      '4': { title: 'Triton Logistics', subtitle: 'Sito servizi B2B', desc: 'IA chiara e CTA efficaci per la lead generation.', stack: 'HTML, CSS, JS', quote: 'Lead inbound in forte crescita.', seed: 'p4' },
+      '5': { title: 'Marina Health', subtitle: 'Sito per clinica', desc: 'Accessibilità e fiducia al centro con contenuti strutturati.', stack: 'HTML, CSS, JS', quote: 'I pazienti adorano il nuovo sito.', seed: 'p5' },
+      '6': { title: 'Poseidon Ventures', subtitle: 'Presenza per fondo VC', desc: 'Design minimale e autorevole con tipografia forte.', stack: 'HTML, CSS, JS', quote: 'Esattamente il tono che volevamo.', seed: 'p6' }
     };
     const data = presets[id] || presets['1'];
     document.getElementById('projectTitle').textContent = data.title;
