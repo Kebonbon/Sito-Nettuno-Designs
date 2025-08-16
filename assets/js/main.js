@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const subject = encodeURIComponent(`Richiesta preventivo da ${name}`);
       const body = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\n${message}`);
-      window.location.href = `mailto:hello@nettunodesigns.dev?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:nettunodesigns@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 });

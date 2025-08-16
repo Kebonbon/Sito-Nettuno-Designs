@@ -162,10 +162,10 @@ header.site-header.scrolled .btn-outline { border-color: rgba(2,6,23,0.2); }
 .breadcrumbs { color: var(--muted-text); font-size: 14px; margin-top: 8px; }
 
 /* About – Team */
-.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 1024px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .team-grid { grid-template-columns: 1fr; } }
-.team-card { text-align: center; background: white; border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 16px; }
+.team-card {display: flex; flex-direction: column; justify-content: center; text-align: center; background: white; border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 16px; }
 .team-card img { border-radius: var(--radius-sm); margin-bottom: 10px; }
 
 /* Services – Process */
