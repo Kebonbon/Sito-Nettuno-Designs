@@ -17,32 +17,32 @@
   <meta name="twitter:title" content="Nettuno Designs – La digitalizzazione della tua impresa">
   <meta name="twitter:description" content="Nettuno Designs è un’agenzia web che aiuta le aziende a digitalizzarsi con design moderno, sviluppo, SEO ed e‑commerce.">
   <meta name="twitter:image" content="https://www.nettunodesigns.com/logoNettuno.png">
-  <link rel="icon" href="logoNettunoMini.png" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="logoNettuno.png">
+  <link rel="icon" href="/logoNettunoMini.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logoNettuno.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/seo.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/seo.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header class="site-header on-hero">
     <div class="container navbar">
-      <a class="brand" href="index.html" aria-label="Nettuno Designs home">
-        <img src="logoNettunoMini.png" alt="Nettuno Designs logo">
+      <a class="brand" href="/" aria-label="Nettuno Designs home">
+        <img src="/logoNettunoMini.png" alt="Nettuno Designs logo">
         <span>Nettuno Designs</span>
       </a>
       <nav>
         <button class="hamburger" aria-label="Open navigation" aria-expanded="false"><span></span></button>
         <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">Chi siamo</a>
-          <a href="services.html">Servizi</a>
+          <a href="/">Home</a>
+          <a href="/about/">Chi siamo</a>
+          <a href="/services/">Servizi</a>
           <!--
-          <a href="portfolio.html">Portfolio</a>
+          <a href="/portfolio/">Portfolio</a>
           -->
-          <a href="contact.html" class="btn btn-outline">Richiedi un preventivo</a>
+          <a href="/contact/" class="btn btn-outline">Richiedi un preventivo</a>
         </div>
       </nav>
     </div>
@@ -51,12 +51,12 @@
   <main>
     <section class="hero">
       <div class="container" style="padding-top: 0px;">
-        <img class="logo reveal" src="logoNettuno.png" alt="Nettuno Designs">
+        <img class="logo reveal" src="/logoNettuno.png" alt="Nettuno Designs">
         <h1 class="reveal">La digitalizzazione della tua impresa parte dal sito web</h1>
         <p class="tagline reveal">Creiamo siti web ad alte prestazioni che generano crescita, credibilità e traffico.</p>
         <div class="cta-group reveal">
           <a href="#services" class="btn btn-gradient">Iniziamo</a>
-          <a href="contact.html" class="btn btn-outline">Contattaci</a>
+          <a href="/contact/" class="btn btn-outline">Contattaci</a>
         </div>
       </div>
       <div class="hero-wave" aria-hidden="true" data-parallax="0.15">
@@ -167,7 +167,7 @@
             <h3>Pronto a far crescere il tuo business online?</h3>
             <p class="help" style="color: rgb(255,255,255)">Pianifichiamo insieme i prossimi passi in una consulenza gratuita.</p>
           </div>
-          <a href="contact.html" class="btn btn-gradient-1 btn-outline">Richiedi un preventivo</a>
+          <a href="/contact/" class="btn btn-gradient-1 btn-outline">Richiedi un preventivo</a>
         </div>
       </div>
     </section>
@@ -176,7 +176,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="logoNettuno.png" alt="Nettuno Designs">
+        <img src="/logoNettuno.png" alt="Nettuno Designs">
         <p>Progettiamo e realizziamo siti web performanti.</p>
         <div class="footer-social">
           <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -187,12 +187,12 @@
       <div>
         <strong>Azienda</strong>
         <div class="footer-links">
-          <a href="about.html">Chi siamo</a>
-          <a href="services.html">Servizi</a>
+          <a href="/about/">Chi siamo</a>
+          <a href="/services/">Servizi</a>
           <!--
-          <a href="portfolio.html">Portfolio</a>
+          <a href="/portfolio/">Portfolio</a>
           -->
-          <a href="contact.html">Contattaci</a>
+          <a href="/contact/">Contattaci</a>
         </div>
       </div>
       <div>
@@ -210,7 +210,27 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
-  <script src="assets/js/main.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nettuno Designs",
+    "url": "https://www.nettunodesigns.com/",
+    "logo": "https://www.nettunodesigns.com/logoNettuno.png",
+    "sameAs": [
+      "https://www.instagram.com/nettunodesigns/"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.nettunodesigns.com/",
+    "name": "Nettuno Designs"
+  }
+  </script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
   
 </html>

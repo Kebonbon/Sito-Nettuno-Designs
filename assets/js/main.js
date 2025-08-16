@@ -11,11 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
   updateHeaderOnScroll();
   window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
 
-  // Active nav highlighting
-  const currentPath = location.pathname.split('/').pop() || 'index.html';
+  // Active nav highlighting (works with directory-based URLs)
+  function normalizePath(path) {
+    try {
+      const a = document.createElement('a');
+      a.href = path;
+      let p = a.pathname || '/';
+      p = p.replace(/index\.html$/, '');
+      if (!p.endsWith('/')) p += '/';
+      return p;
+    } catch (_) {
+      return '/';
+    }
+  }
+  const currentNormalized = normalizePath(location.pathname);
   navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+    const linkHref = link.getAttribute('href') || '';
+    const linkNormalized = normalizePath(linkHref);
+    if (currentNormalized === linkNormalized) {
       link.classList.add('active');
     }
   });
